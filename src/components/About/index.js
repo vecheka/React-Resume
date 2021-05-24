@@ -1,7 +1,7 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 
-import Paper from '@material-ui/core/Paper';
+// import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
 import style from './style.js';
@@ -39,7 +39,7 @@ class About extends React.Component {
 
             <br/><br/>
             I am currently working as a software engineer in a network team at Nordstrom. I write automations to help network engineers with automationg network devices across all Nordstrom's stores, and network tools
-            for troubleshooting use on the networks. Check out <a className={classes.resume} href={resumePDF} target="_blank">my resume</a> to learn more about what I do.
+            for troubleshooting use on the networks. Check out <a className={classes.resume} href={resumePDF} target="_blank" rel="noreferrer">my resume</a> to learn more about what I do.
 
           </Grid>
           <Grid item xs={6}>

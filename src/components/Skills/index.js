@@ -1,7 +1,7 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 
-import Paper from '@material-ui/core/Paper';
+// import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import StarRoundedIcon from '@material-ui/icons/StarRounded';
 import StarBorderRoundedIcon from '@material-ui/icons/StarBorderRounded';

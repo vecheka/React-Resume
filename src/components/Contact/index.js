@@ -1,13 +1,13 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 
-import Paper from '@material-ui/core/Paper';
+// import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
 import style from './style.js';
-import linkedin from 'images/linkedin.png';
-import github from 'images/github.png';
-import { FaLinkedinIn, FaGithub, FaMobileAlt } from 'react-icons/fa';
+// import linkedin from 'images/linkedin.png';
+// import github from 'images/github.png';
+import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
 
 
@@ -35,8 +35,8 @@ class Contact extends React.Component {
 
         <Grid container spacing={1} className={classes.body}>
           <Grid item xs={12} className={classes.github} >
-            <a href='https://www.linkedin.com/in/vecheka-chhourn/' target="_blank" > <FaLinkedinIn className={classes.icon} /> </a>
-            <a href='https://github.com/vecheka' target="_blank" > <FaGithub className={classes.icon} /> </a>
+            <a href='https://www.linkedin.com/in/vecheka-chhourn/' target="_blank" rel="noreferrer"> <FaLinkedinIn className={classes.icon} /> </a>
+            <a href='https://github.com/vecheka' target="_blank" rel="noreferrer"> <FaGithub className={classes.icon} /> </a>
           </Grid>
         </Grid>
 
