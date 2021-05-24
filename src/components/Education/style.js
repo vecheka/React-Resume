@@ -14,23 +14,21 @@ const style = theme => ({
   body: {
     fontFamily: 'Montserrat',
     padding: '10px',
-    wordWrap: 'break-word',
-    lineHeight: '1.5em'
+    textAlign: 'center',
   },
-  sectionHeader: {
-    textAlign: 'left',
-    fontSize: '2em',
-    float: 'left',
-    margin: '16px 20px 20px 0'
+  date: {
+    color: '#777',
+    marginTop: '40px',
+    fontSize: '13px'
   },
-  italic: {
-    fontStyle: 'italic',
+  description: {
+    marginTop: '25px',
   },
-  resume: {
-    fontStyle: 'italic',
-    textDecoration: 'none',
-    cursor: 'pointer'
-  }
+  descriptionHeader: {
+    fontWeight: 'bold',
+    // fontSize: '13px'
+  },
+
 });
 
 export default style;

@@ -7,6 +7,10 @@ import './App.css';
 // Components
 import Header from 'components/Header';
 import About from 'components/About';
+import Education from 'components/Education';
+import Skills from 'components/Skills';
+import Experience from 'components/Experience';
+import Contact from 'components/Contact';
 
 
 
@@ -29,8 +33,26 @@ class App extends React.Component {
                   <About />
                </Paper>
              </Grid>
-
-
+             <Grid item xs={12}>
+               <Paper>
+                  <Education />
+               </Paper>
+             </Grid>
+             <Grid item xs={12}>
+               <Paper>
+                  <Skills />
+               </Paper>
+             </Grid>
+             <Grid item xs={12}>
+               <Paper>
+                  <Experience />
+               </Paper>
+             </Grid>
+             <Grid item xs={12}>
+               <Paper>
+                  <Contact />
+               </Paper>
+             </Grid>
            </Grid>
          </div>
      );
@@ -38,14 +60,3 @@ class App extends React.Component {
 }
 
 export default App;
-
-// <Grid item xs={12}>
-//   <Paper>
-//      hello world!
-//   </Paper>
-// </Grid>
-// <Grid item xs={12}>
-//   <Paper>
-//      hello world!
-//   </Paper>
-// </Grid>

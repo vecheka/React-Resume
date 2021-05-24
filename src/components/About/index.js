@@ -4,7 +4,8 @@ import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
-import style from './style.js'
+import style from './style.js';
+import resumePDF from 'files/resume.pdf';
 
 class About extends React.Component {
 
@@ -24,7 +25,7 @@ class About extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classes.root}>
+      <div>
         <div className={classes.title}>
           <span > About </span>
         </div>
@@ -38,7 +39,7 @@ class About extends React.Component {
 
             <br/><br/>
             I am currently working as a software engineer in a network team at Nordstrom. I write automations to help network engineers with automationg network devices across all Nordstrom's stores, and network tools
-            for troubleshooting use on the networks. Check out my <span>resume</span> to learn more about what I do.
+            for troubleshooting use on the networks. Check out <a className={classes.resume} href={resumePDF} target="_blank">my resume</a> to learn more about what I do.
 
           </Grid>
           <Grid item xs={6}>
@@ -47,7 +48,6 @@ class About extends React.Component {
             with my friends during the Summer weekends. I am also a big road trip lover, I usually plan a big road trip around the US during the summer with a friend or by myself. The scenic around the US is
             one of the best in the world if not the best. I dislike the rain and Winter season.
             <br/><br/>
-
 
           </Grid>
         </Grid>

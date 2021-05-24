@@ -31,7 +31,7 @@ class Header extends React.Component {
 
   componentDidMount = async () => {
     // TODO: uncomment when ready to deploy
-    // setInterval(this.changeImage, this.timer);
+    setInterval(this.changeImage, this.timer);
   }
 
   changeImage = async () => {
