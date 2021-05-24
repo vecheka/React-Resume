@@ -6,6 +6,8 @@ import bg3 from 'images/bg3.png';
 import bg4 from 'images/bg4.png';
 // import bg5 from 'images/bg5.png';
 import bg6 from 'images/bg6.png';
+import bg7 from 'images/bg7.png';
+
 // import Paper from '@material-ui/core/Paper';
 // import Grid from '@material-ui/core/Grid';
 
@@ -24,7 +26,8 @@ class Header extends React.Component {
       bg3,
       bg4,
       // bg5,
-      bg6
+      bg6,
+      bg7
     ];
     this.timer = 6000;
   }

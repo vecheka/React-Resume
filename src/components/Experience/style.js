@@ -15,6 +15,7 @@ const style = theme => ({
     fontFamily: 'Montserrat',
     padding: '10px',
     textAlign: 'center',
+    // overflowX: 'scroll'
   },
   date: {
     marginTop: '30px',

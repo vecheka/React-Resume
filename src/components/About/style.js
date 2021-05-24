@@ -28,6 +28,7 @@ const style = theme => ({
   },
   resume: {
     fontStyle: 'italic',
+    fontWeight: 'bold',
     textDecoration: 'none',
     cursor: 'pointer'
   }

@@ -3,7 +3,12 @@ import { withStyles } from '@material-ui/core/styles';
 
 // import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+// import ArrowBackIosRoundedIcon from '@material-ui/icons/ArrowBackIosRounded';
+// import GridList from '@material-ui/core/GridList';
+// import GridListTile from '@material-ui/core/GridListTile';
+// import GridListTileBar from '@material-ui/core/GridListTileBar';
 
+import Job from './job.js';
 import style from './style.js';
 
 class Experience extends React.Component {
@@ -12,11 +17,42 @@ class Experience extends React.Component {
     super(props);
     this.state = {
     };
+    this.jobs = [
+      {
+        title: 'Engineer I',
+        location: 'Seattle, WA',
+        company: 'Nordstrom',
+        date: 'Sept 2019 - Present',
+        description: 'Currently working as a software engineer in a network team, writing network automations and network tools for network engineers. Developing coding standards within the team, managing Linux servers, and open source and proprietary softwares.'
+      },
+      {
+        title: 'Software Engineer Intern',
+        location: 'Seattle, WA',
+        company: 'Nordstrom',
+        date: 'June 2019 - Sept 2019',
+        description: 'Wrote automation utilizing external APIs like LiveAction and Datadog to create telemetry report for analysis and alert. Developed Slack App and web server as network tools for network engineers.'
+      },
+      {
+        title: 'Quantitative Tutor',
+        location: 'Tacoma, WA',
+        company: 'University of Washington Tacoma',
+        date: 'Dec 2017 - June 2019',
+        description: 'Enhanced students understanding in Computer Science & Mathematics, and organized math and Computer Science workshops to increse students\' academic success.'
+      },
+      {
+        title: 'Tutor',
+        location: 'Seattle, WA',
+        company: 'South Seattle College',
+        date: 'Jan 2016 - June 2017',
+        description: 'Assisted students with the concepts of Computer Science & Math.'
+      },
 
+    ];
+    this.gridSize = parseInt(12 / this.jobs.length);
   }
 
   componentDidMount = async () => {
-
+    console.log(this.gridSize);
   }
 
 
@@ -29,50 +65,21 @@ class Experience extends React.Component {
           <span > Experience </span>
         </div>
         <Grid container spacing={4} className={classes.body}>
-          <Grid item xs={3}>
-            <div> Engineer I </div>
-            <div className={classes.location}> Seattle, WA </div>
-            <div className={classes.company}> Nordstrom </div>
-            <div className={classes.date}> Sept 2019 - Present </div>
-            <div className={classes.description}>
-              Currently working as a software engineer in a network team, writing network automations and network tools for network engineers.
-              Developing coding standards within the team, managing Linux servers, and open source and proprietary softwares.
-            </div>
-          </Grid>
-
-          <Grid item xs={3}>
-            <div> Software Engineer Intern </div>
-            <div className={classes.location}> Seattle, WA </div>
-            <div className={classes.company}> Nordstrom </div>
-            <div className={classes.date}> June 2019 - Sept 2019 </div>
-            <div className={classes.description}>
-              Wrote automation utilizing extenal APIs like LiveAction and Datadog to create
-              telemetry report for analysis and alert. Developed Slack App and web server as network tools for network engineers.
-            </div>
-          </Grid>
-
-          <Grid item xs={3}>
-            <div> Quantitative Tutor  </div>
-            <div className={classes.location}> Tacoma, WA </div>
-            <div className={classes.company}> University of Washington Tacoma </div>
-            <div className={classes.date}> Dec 2017 - June 2019 </div>
-            <div className={classes.description}>
-              Enhanced students understanding in Computer Science & Mathematics, and organized math and Computer Science workshops
-              to increse students' academic success.
-            </div>
-          </Grid>
-
-          <Grid item xs={3}>
-            <div> Tutor </div>
-            <div className={classes.location}> Seattle, WA </div>
-            <div className={classes.company}> South Seattle College </div>
-            <div className={classes.date}> Jan 2016 - June 2017 </div>
-            <div className={classes.description}>
-              Assisted students with the concepts of Computer Science & Math.
-            </div>
-          </Grid>
+          {this.jobs.map(job => (
+            <Grid item xs={this.gridSize}>
+              <Job
+                title={job.title}
+                location={job.location}
+                company={job.company}
+                date={job.date}
+                description={job.description}
+              />
+            </Grid>
+          ))}
 
         </Grid>
+
+
         <div style={{  borderBottom: '1px dotted' }}> </div>
       </div>
     );
@@ -81,3 +88,17 @@ class Experience extends React.Component {
 }
 
 export default withStyles(style)(Experience);
+// <Grid container spacing={4} className={classes.body}>
+//   {this.jobs.map(job => (
+//     <Grid item xs={3}>
+//       <Job
+//         title={job.title}
+//         location={job.location}
+//         company={job.company}
+//         date={job.date}
+//         description={job.description}
+//       />
+//     </Grid>
+//   ))}
+//
+// </Grid>
