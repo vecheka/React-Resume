@@ -31,6 +31,7 @@ class Contact extends React.Component {
     return (
       <div>
         <div className={classes.title}>
+          
         </div>
 
         <Grid container spacing={1} className={classes.body}>

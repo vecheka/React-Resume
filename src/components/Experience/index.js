@@ -73,6 +73,7 @@ class Experience extends React.Component {
           </Grid>
 
         </Grid>
+        <div style={{  borderBottom: '1px dotted' }}> </div>
       </div>
     );
   }

@@ -57,6 +57,7 @@ class Skills extends React.Component {
           )
           )}
         </Grid>
+        <div style={{  borderBottom: '1px dotted' }}> </div>
       </div>
     );
   }

@@ -24,34 +24,34 @@ class App extends React.Component {
          <div>
            <Grid container spacing={3}>
              <Grid item xs={12}>
-               <Paper>
+                <Paper>
                   <Header />
-               </Paper>
+                </Paper>
              </Grid>
              <Grid item xs={12}>
-               <Paper>
+
                   <About />
-               </Paper>
+
              </Grid>
              <Grid item xs={12}>
-               <Paper>
+
                   <Education />
-               </Paper>
+
              </Grid>
              <Grid item xs={12}>
-               <Paper>
+
                   <Skills />
-               </Paper>
+
              </Grid>
              <Grid item xs={12}>
-               <Paper>
+
                   <Experience />
-               </Paper>
+
              </Grid>
              <Grid item xs={12}>
-               <Paper>
+
                   <Contact />
-               </Paper>
+
              </Grid>
            </Grid>
          </div>

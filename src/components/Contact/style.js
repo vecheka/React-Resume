@@ -9,7 +9,7 @@ const style = theme => ({
     color: '#283671',
     fontSize: '3em',
     textAlign: 'center',
-    paddingBottom: '10px'
+    paddingBottom: '20px'
   },
   body: {
     fontFamily: 'Montserrat',
